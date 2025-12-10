@@ -1,0 +1,129 @@
+.event-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.event-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    /* Taller for parallax */
+    z-index: 0;
+    overflow: hidden;
+}
+
+.event-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.event-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.event-section.align-right {
+    justify-content: flex-end;
+}
+
+.event-section:not(.align-right) {
+    justify-content: flex-start;
+}
+
+.event-card {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: #fff;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 5%;
+}
+
+.event-title {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.event-date-box {
+    margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+}
+
+.event-date {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.event-time {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.event-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.event-btn {
+    background: transparent;
+    border: 1px solid var(--primary-gold);
+    color: var(--primary-gold);
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .event-section {
+        justify-content: center !important;
+    }
+
+    .event-card {
+        margin: 0;
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .event-title {
+        font-size: 2.8rem;
+    }
+}

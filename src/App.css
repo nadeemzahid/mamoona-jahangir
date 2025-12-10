@@ -1,0 +1,90 @@
+.app-main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--primary-gold);
+  transform-origin: 0%;
+  z-index: 100;
+}
+
+.app-footer {
+  background-color: var(--primary-cream);
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  color: var(--text-dark);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  margin-bottom: 20px;
+}
+
+.footer-names {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.footer-sub {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+.fab-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}
+
+.fab-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--primary-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fab-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+.fab-button:active {
+  transform: scale(0.95);
+}
