@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import './Hero.css';
 
-export default function Hero() {
+export default function Hero({ date, month }) {
     const [clickCount, setClickCount] = useState(0);
 
     const handleAmpersandClick = () => {
@@ -75,18 +75,8 @@ export default function Hero() {
                     className="hero-dates"
                 >
                     <div className="date-item">
-                        <span className="day">27</span>
-                        <span className="mon">Dec</span>
-                    </div>
-                    <div className="divider">|</div>
-                    <div className="date-item">
-                        <span className="day">28</span>
-                        <span className="mon">Dec</span>
-                    </div>
-                    <div className="divider">|</div>
-                    <div className="date-item">
-                        <span className="day">29</span>
-                        <span className="mon">Dec</span>
+                        <span className="day" style={{ fontSize: '2.5rem' }}>{date || '29'}</span>
+                        <span className="mon">{month || 'Dec'}</span>
                     </div>
                 </motion.div>
             </div>

@@ -1,0 +1,165 @@
+/* Full Screen Festive Background */
+.mehendi-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/mehendi_festive_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.mehendi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 40, 0, 0.4);
+    /* Dark Green Tint */
+    z-index: 1;
+}
+
+/* The Invitation Card */
+.mehendi-card {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    /* Gold border */
+    border-radius: 30px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+}
+
+.mehendi-header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FFD700;
+    /* Gold */
+    margin-bottom: 20px;
+}
+
+.mehendi-couple-name {
+    font-size: 4rem;
+    font-family: 'Great Vibes', cursive;
+    margin: 10px 0 30px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.mehendi-title {
+    font-size: 2.5rem;
+    color: #90EE90;
+    /* Light Green */
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Date Block */
+.mehendi-date-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.date-circle {
+    border: 2px solid #FFD700;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.date-num {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFD700;
+    line-height: 1;
+}
+
+.date-month {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.mehendi-time {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Map Button */
+.mehendi-map-btn {
+    background: linear-gradient(45deg, #FFD700, #ffba00);
+    color: #333;
+    font-weight: 800;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+    .mehendi-couple-name {
+        font-size: 3rem;
+    }
+
+    .mehendi-title {
+        font-size: 2rem;
+    }
+
+    .date-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .date-num {
+        font-size: 2.5rem;
+    }
+}
