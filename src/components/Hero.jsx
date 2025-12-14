@@ -75,8 +75,18 @@ export default function Hero({ date, month }) {
                     className="hero-dates"
                 >
                     <div className="date-item">
-                        <span className="day" style={{ fontSize: '2.5rem' }}>{date || '29'}</span>
-                        <span className="mon">{month || 'Dec'}</span>
+                        <span className="day" style={{ fontSize: '2rem' }}>27</span>
+                        <span className="mon">Dec</span>
+                    </div>
+                    <div className="date-separator">|</div>
+                    <div className="date-item">
+                        <span className="day" style={{ fontSize: '2.5rem' }}>28</span>
+                        <span className="mon">Dec</span>
+                    </div>
+                    <div className="date-separator">|</div>
+                    <div className="date-item">
+                        <span className="day" style={{ fontSize: '2rem' }}>29</span>
+                        <span className="mon">Dec</span>
                     </div>
                 </motion.div>
             </div>

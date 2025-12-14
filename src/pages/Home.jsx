@@ -46,21 +46,51 @@ export default function Home() {
                 style={{ scaleX }}
             />
 
-            <Hero date="29" month="Dec" />
+            <Hero date="27-29" month="Dec" />
 
             <Countdown targetDate="2025-12-29T19:00:00" />
 
             <EventSection
+                title="Pre-Nuptial Ceremony & Mehendi Night"
+                date="December 27, 2025"
+                time="6:00 PM"
+                description="Join us for the Pre-Nuptial Ceremony and Mehendi Night."
+                bgImage="/mehendi_bg.png"
+                align="left"
+                eventData={{
+                    title: "Mehendi Night",
+                    start: "20251227T180000",
+                    end: "20251227T230000",
+                    location: "Barbhuiya Marriage Hall"
+                }}
+            />
+
+            <EventSection
+                title="Shirni Lunch"
+                date="December 28, 2025"
+                time="1:00 PM"
+                description="We invite you and your family to bless the wedding celebrations and join us for a dawat prepared in honor of this auspicious union."
+                bgImage="/shirni_bg.png"
+                align="right"
+                eventData={{
+                    title: "Shirni Lunch",
+                    start: "20251228T130000",
+                    end: "20251228T160000",
+                    location: "Barbhuiya Marriage Hall"
+                }}
+            />
+
+            <EventSection
                 title="Groom Reception"
                 date="December 29, 2025"
-                time="7:00 PM"
-                description="The crescendo of our celebration. We cordially invite you to witness and bless the commencement of our eternal union in an evening of elegance and romance."
+                time="1:00 PM"
+                description="The crescendo of our celebration. We cordially invite you to witness and bless the commencement of our eternal union in an evening of elegance."
                 bgImage="/reception_bg.png"
                 align="left"
                 eventData={{
                     title: "Groom Reception",
-                    start: "20251229T190000",
-                    end: "20251229T235900",
+                    start: "20251229T130000",
+                    end: "20251229T170000",
                     location: "Barbhuiya Marriage Hall"
                 }}
             />
